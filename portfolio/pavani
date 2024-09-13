@@ -1,0 +1,39 @@
+<h2 class="about">About PBR VITS</h2>
+<section class="events">
+    <h1> CAMPUS</h1>
+    <div class="row">
+        <div class="events-col">
+            <img src="images/cmp1.jpg">
+            <div class="layer"></div>
+                <h3>VEC-CAMPUS</h3>
+        </div>
+        <div class="events-col">
+            <img src="images/cmp.jpg">
+            <div class="layer"></div>
+                <h3>VITS-BLOCK</h3>
+        </div>
+        <div class="events-col">
+            <img src="images/cmp2.jpg">
+            <div class="layer"></div>
+                <h3>CAMPUS ENVIRONMENT</h3>
+        </div>
+
+    </div>
+    <div class="row2">
+        <div class="events-col">
+            <img src="images/vits123.jpg">
+            <div class="layer"></div>
+                <h3> VITS-CAMPUS</h3>
+        </div>
+        <div class="events-col">
+            <img src="imageS/clg.jpg">
+            <div class="layer"></div>
+                <h3>VITS-CAMPUS</h3>
+        </div>
+        <div class="events-col">
+            <img src="images/mrr.jpg">
+            <div class="layer"></div>
+                <h3>MRR-BLOCK</h3>
+        </div>
+    </div>
+</section>
