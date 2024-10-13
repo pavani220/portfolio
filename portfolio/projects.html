@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bccf9ce93a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <marquee class="headquote">WELCOME TO MY PORTFOLIO</marquee>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo"/>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="certificates.html">Certificates</a></li>
+                    <li><a href="projects.html">projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>MY <span>PROJECTS </span></h1>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My PROJECTS</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2> Web Designing </h2><br>
+                        <p>Launched more than 3 websites</p><br>
+                        <p> 1.PBR VITS COLLEGE WEBSITE<br>
+                            2.VISVOTSAV WEBSITE<br>
+                            3.CUSTOMIZED PORTFOLIO<br>
+                        </p>
+                        <a href="https://pbrvits.netlify.app">Learn More</a>
+                    
+                    </div>
+
+                    <div>
+                        <i class="fa-brands fa-android"></i>
+                        <h2> App Design</h2><br>
+                        <p>DEVELOPED AN ANDROID STUDIO APP NAMED SPV FOODIE</p><br>
+                        <p>THE APP IS RECOGNIZED BY #STARTUPINDIA</p>
+                        <P> THE APP GOT MORE THAN 200 ORDERS IN A DAY</P>
+                        <a href="https://github.com/pavani220">Learn More</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-brands fa-python"></i>
+                        <h2> Python , ML Projects</h2><br>
+                        <p>DID SOME PROJECTS USING TKINTER</p><br>
+                        <P> VOICE ASSISTANT USING PYTHON</P>
+                        <p>USING MACHINE LEARNING CANCER DETECTION IS DONE</p>
+                        <a href="https://github.com/pavani220">Learn More</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2> ROBOTIC CAR</h2><br>
+                        <p>ROBOTIC CAR WORKS REMOTELY USING ARDUINO </p><br>
+                        <P>THE ROBOTIC CAR CAN COMPETE OTHER ROBOTS</P>
+                        <a href="https://github.com/pavani220">Learn More</a>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2> UI/UX  Designing </h2><br>
+                        <p>Launched 2 websites in <span>WIX STUDIO</span></p><br>
+                        <p> 1.PERSONAL PORTFOLIO<br>
+                            2.USER-FRIENDLY WEB DESIGNING ORDERS <br>
+                        </p>
+                        <a href="https://bandiharshitha4.wixsite.com/web-developer">Learn More</a>
+                
+                    </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="reserve"><b><i><h6>THIS WEBSITE WAS DEVELOPED BY</h6>
+        <h6>B.PAVANI</h6>
+        </i></b>
+        <br>
+        &copy; Copyrights Pavani Bandi
+    </div>
+</body>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+
+    }
+</script>
+
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>  

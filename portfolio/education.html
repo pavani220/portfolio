@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavani-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bccf9ce93a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <marquee class="headquote">WELCOME TO MY PORTFOLIO</marquee>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo"/>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="certificates.html">Certificates</a></li>
+                    <li><a href="projects.html">projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>MY <span>EDUCATION </span></h1>
+            </div>
+        </div>
+    </div>
+    
+
+<!-----------------------------services------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">EDUCATION</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2> B-TECH</h2><br>
+                        <p>COMPUTER SCIENCE AND ENGINEERING--INTERNET OF THINGS</p><br>
+                        <P>PBR VISVODAYA INSTITUTE OF TECHNOLOGY AND SCIENCE</P>
+                        <p>2021-2025</p>
+                        <p>CGPA::9.2</p>
+                    
+                    </div>
+
+                    <div>
+                        <i class="fa-brands fa-android"></i>
+                        <h2> INTERMEDIATE</h2><br>
+                        <p>MPC-SECONDARY BOARD OF EDUCATION</p>
+                        <P>VISWASAI JUNIOR COLLEGE</P><br>
+                        
+                        <P>2019-2021</P>
+                        <P>PERCENTAGE::94%</P>
+                        
+                    </div>
+
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2> 10TH</h2><br>
+                    <p>SRI CHAITANYA TECHNO SCHOOL-ATMAKUR</p><br>
+                    <P>2019</P>
+                    <P>GPA::9.8</P>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+<!-----------------mentor-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">EXPERIENCE</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2> MENTOR </h2><br>
+                    <p>WEB DEVELOPMENT TRAINER</p><br>
+                    <P>PBR VISVODAYA INSTITUTE OF TECHNOLOGY AND SCIENCE</P>
+                    <p>TRAINED MORE THAN 200 STUDENTS <br><br><span>BY SHAIK SANDHANI AND BANDI PAVANI</span></p>
+
+                    <a href=" https://www.linkedin.com/in/pavani-bandi-a13639266/">LEARN MORE</a>
+                
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>ONLINE TRAINER</h2><br>
+                    <p>WEB DEVELOPMENT TRAINEE</p>
+                    <P>TRAINED MORE THAN 100 STUDENTS IN ONLINE <br><br><span>BY SHAIK SANDHANI AND PAVANI BANDI</span></P><br>
+                    <a href=" https://www.linkedin.com/in/pavani-bandi-a13639266/">LEARN MORE</a>
+                </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <div class="work-list">
+            <div class="work">
+                <img src="train-1.jpeg"/>
+        
+                <div class="layer">
+                    <h3> TRAINING</h3>
+                    <p> WEB DEVELOPMEMT</p><br>
+                    <p>by SHAIK SANDHANI <br>PAVANI BANDI</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="train-2.jpeg"/>
+                <div class="layer">
+                    <h3> TRAINING</h3>
+                    <p> WEB DEVELOPMENT</p><br>
+                    <p>by SHAIK SANDHANI <br>PAVANI BANDI</p>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="train-3.jpeg"/>
+                <div class="layer">
+                    <h3> TRAINING</h3>
+                    <p> WEB DEVELOPMENT</p><br>
+                    <p>by SHAIK SANDHANI <br>PAVANI BANDI</p>
+                    <!----<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> ----->
+                </div>
+            </div>
+        </div>
+        <a href=" https://www.linkedin.com/in/pavani-bandi-a13639266/" class="btn">See more</a>
+    </div>
+</div>
+
+<div class="reserve"><b><i><h6>THIS WEBSITE WAS DEVELOPED BY</h6>
+    <h6>B.PAVANI</h6>
+    </i></b>
+    <br>
+    &copy; Copyrights Pavani Bandi
+</div>
+
+</body> 
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+
+        }
+    </script>
+
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</html>

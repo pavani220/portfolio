@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bccf9ce93a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <marquee class="headquote">WELCOME TO MY PORTFOLIO</marquee>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo"/>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="certificates.html">Certificates</a></li>
+                    <li><a href="projects.html">projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>MY <span>CERTIFICATES </span></h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My CERTIFICATES</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="udemy.jpg"/>
+                    <div class="layer">
+                        <h3> UDEMY</h3>
+                        <p> JAVASCRIPT CERTIFICATE</p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="pecc.png"/>
+            
+                    <div class="layer">
+                        <h3> PEC</h3>
+                        <p> RESEARCH PAPER</p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="kaggle.jpeg"/>
+                    <div class="layer">
+                        <h3> KAGGLE</h3>
+                        <p> INTRO TO PROGRAMMING</p>
+                        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="be10x.jpeg"/>
+                    <div class="layer">
+                        <h3> BE10X</h3>
+                        <p> POWERBI CERTIFICATE</p>
+                        <!--<a href=" #"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>--->
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="mc.png"/>
+            
+                    <div class="layer">
+                        <h3> MICROSOFT</h3>
+                        <p>AZURE IOT DEVELOPER</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="skill.jpeg"/>
+            
+                    <div class="layer">
+                        <h3> SKILL NATION</h3>
+                        <p> AI WITH POWERBI</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="ppt.jpeg"/>
+            
+                    <div class="layer">
+                        <h3> PBR VITS</h3>
+                        <p> PPT CERTIFICATE</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="certificate.jpg "/>
+            
+                    <div class="layer">
+                        <h3> MYGOV</h3>
+                        <p> QUIZ CERTIFICATE</p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="typing.jpeg"/>
+            
+                    <div class="layer">
+                        <h3> RATATYPE</h3>
+                        <p> FAST TYPING</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="verified.jpeg"/>
+            
+                    <div class="layer">
+                        <h3> CISCO</h3>
+                        <p> VERIFIED</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="hack.jpeg"/>
+            
+                    <div class="layer">
+                        <h3> HACKERRANK</h3>
+                        <p> PYTHON CERTIFICATE</p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="inff.jpg.png"/>
+            
+                    <div class="layer">
+                        <h3> INFOSYS</h3>
+                        <p> INTERNET OF THINGS CERTIFICATE</p>
+                    </div>
+                </div>
+
+                
+
+
+
+
+
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div class="reserve"><b><i><h6>THIS WEBSITE WAS DEVELOPED BY</h6>
+        <h6>B.PAVANI</h6>
+        </i></b>
+        <br>
+        &copy; Copyrights Pavani Bandi
+    </div>
+</body> 
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+
+    }
+</script>
+
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+</html>  

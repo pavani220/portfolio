@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bccf9ce93a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <marquee class="headquote">WELCOME TO MY PORTFOLIO</marquee>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo"/>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="certificates.html">Certificates</a></li>
+                    <li><a href="projects.html">projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>MY <span>CONTACT</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1><br>
+                    <p><i class="fa-solid fa-envelope"></i>bandiharshitha4@gmail.com<br>pavanibandi548@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7780309944</p>
+                    <div class="social-icons">
+                        <a href=" https://www.linkedin.com/in/pavani-bandi-a13639266/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/pavani220"><i class="fa-brands fa-github"></i></a>
+                    
+                    </div>
+    
+                
+                    <a href=" PAVANI Resume.pdf"class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type ="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="reserve"><b><i><h6>THIS WEBSITE WAS DEVELOPED BY</h6>
+        <h6>B.PAVANI</h6>
+        </i></b>
+        <br>
+        &copy; Copyrights Pavani Bandi
+    </div>
+</body>  
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+
+    }
+</script>
+
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
